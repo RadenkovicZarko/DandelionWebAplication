@@ -1,0 +1,54 @@
+# Dependency directories
+node_modules/
+
+# Angular build output
+/dist/
+/tmp/
+/out-tsc/
+
+# IDEs and editors
+/.idea/
+/.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.tmp.*
+*.temp
+
+# Environment configuration files
+/environment*.ts
+
+# Angular files
+/angular.json
+/package-lock.json
+/package.json
+/tsconfig.json
+/tslint.json
+
+# Other files and folders
+/.angular/
+/.cache/
+/coverage/
+/e2e/
+/src/assets/
+
+# Firebase configuration files (if used)
+/firebase.json
+/.firebaserc
+
+# Ignore specific environment files
+/src/environments/environment.ts
+/src/environments/environment.prod.ts
+
+# Exclude npm debug logs
+npm-debug.log*
+
+# Exclude Yarn error logs
+yarn-error.log

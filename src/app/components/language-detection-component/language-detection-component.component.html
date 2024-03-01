@@ -1,0 +1,17 @@
+<div>
+  <label for="text">Enter Text:</label>
+  <textarea id="text" [(ngModel)]="text"></textarea>
+</div>
+<div>
+  <label for="clean">Clean Text:</label>
+  <input type="checkbox" id="clean" [(ngModel)]="clean">
+</div>
+<button (click)="detectLanguage()">Detect Language</button>
+<div *ngIf="detectedLangs">
+  <h2>Detected Languages:</h2>
+  <ul>
+    <li *ngFor="let lang of detectedLangs">
+      Language: {{ lang.lang }} (Confidence: {{ lang.confidence }})
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,14 @@
+<div>
+  <textarea id="text" [(ngModel)] = "text"></textarea>
+  <select [(ngModel)] = "selectedLanguage">
+    <option value="en">Engleski</option>
+    <option value="it">Italijanski</option>
+    <option value="auto">Auto</option>
+  </select>
+  <button (click)="analyzeSentiment()">Analiziraj Sentiment</button>
+</div>
+
+<div *ngIf="sentimentScore !== null">
+  <h2>Sentiment Score: {{ sentimentScore }}</h2>
+  <div [style.color]="sentimentColor">{{ sentimentType }}</div>
+</div>

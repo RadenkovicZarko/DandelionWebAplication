@@ -1,0 +1,9 @@
+<div>
+  <form [formGroup]="tokenForm" (ngSubmit)="saveToken()">
+  <div class="form-group">
+    <label for="apiToken">Dandelion API Token:</label>
+    <input type="text" id="apiToken" formControlName="apiToken" required>
+  </div>
+  <button type="submit">Sačuvaj token</button>
+</form>
+</div>

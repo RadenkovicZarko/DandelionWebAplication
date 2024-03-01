@@ -1,0 +1,14 @@
+<div>
+  <h2>Text Similarity</h2>
+  <label for="text1">Text 1:</label>
+  <textarea id="text1" [(ngModel)]="text1"></textarea>
+
+  <label for="text2">Text 2:</label>
+  <textarea id="text2" [(ngModel)]="text2"></textarea>
+
+  <button (click)="compareTexts()">Uporedi tekst</button>
+
+  <div *ngIf="similarityResult">
+    <p>Slicnost: {{ similarityResult }}</p>
+  </div>
+</div>
